@@ -1,0 +1,1 @@
+{"jobID":"3e65ba7d-0ce0-840d-1eea-33c98af7f1e8","spec":{"type":"policy","cause":{"Message":"","User":"William Lambert \u003cw.lambert1031@gmail.com\u003e"},"spec":{"dev:deployment/podinfo":{"add":{"automated":"true"},"remove":null}}},"result":null}
