@@ -2,7 +2,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: podinfo
+  name: sub-service
   namespace: dev
   annotations:
     flux.weave.works/tag.podinfod: semver:>3.0.0
@@ -11,16 +11,16 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: podinfo
+      app: sub-service
   template:
     metadata:
       labels:
-        app: podinfo
+        app: sub-service
       annotations:
         prometheus.io/scrape: 'true'
     spec:
       containers:
-      - name: podinfod
+      - name: sub-service
         image: quay.io/brice/metrics-demo:v4-subscription-service
         ports:
         - containerPort: 3000
