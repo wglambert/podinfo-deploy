@@ -8,7 +8,7 @@ metadata:
     flux.weave.works/tag.podinfod: semver:>3.0.0
     flux.weave.works/automated: 'true'
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: podinfo
